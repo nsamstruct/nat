@@ -1,0 +1,113 @@
+           /*Body*/
+body {
+    
+    background-position: bottom;
+    background-size: 135%;
+    background-image: url("pyramid.jpg");
+    color: white;
+    font-family: Helvetica Neue, Helvetica, Arial, Sans-serif;
+    margin: 0;
+    padding: 0;
+}
+          /*Header*/
+header  {
+    background-blend-mode: rgb(150, 177, 212);
+    background-image: url("shanghaiworldfinancialcenter.jpg" );
+    background-size: 100%;
+    background-position: center;
+    height: 400px;
+    padding: 20px;
+    text-align: center;
+}
+header a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+header .mobile{
+    display: none;
+}
+
+ header .logo a {
+     background-image: url( "n.png");
+     background-size: 100px;
+     background-repeat: no-repeat;
+     display: inline-block;
+     height: 80px;
+     position: relative;
+     text-indent:-9999999px;
+     top: -30px;
+     width: 300px;
+}  
+
+nav ul {
+    margin:8;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+            
+section  {
+    background: white;
+    color: gray;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+             /*Features*/
+.features {
+    background: rgb(87, 89, 94);
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.features figure {
+    margin: auto;
+    padding: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 200px;
+}
+
+.features figure img {
+    border: 1px solid white;
+    border-radius: 50%;
+    box-shadow:gray 0 0 10px;
+    width: 200px;
+}
+/*Responsiv rules*/
+@media screen and (max-width: 715px) {
+    header {
+        height: 250px;
+        background-position: 0 -30px;
+    }
+    header .desktop{
+        display: none;
+    }
+    header .mobile{
+        display: inline-block;
+    }
+   }
+   @media screen and (max-width: 500px) {
+       header{
+           height: 200px;
+           background-position: 0 -0px;
+       }
+   }
+             /*Footer*/
+footer {
+    background: rgb(118, 145, 219);
+    color:white;
+    font-size: 14px;
+    padding: 20px 20px;
+    text-align: center;
+    align-self: end;
+}
